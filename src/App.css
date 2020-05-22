@@ -1,38 +1,125 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  position: bottom;
+  background: rgb(155, 154, 154);
+  width: 300px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  padding: 0;
+  margin: 10px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.body h1 {
+  margin: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body h3 {
+  font-size: 17px;
+  padding-bottom: 3px;
+  font-weight: 800;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+  height: 240px;
+  color: #fff;
+  padding: 0px;
+  margin: 8px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  background: rgb(94, 94, 94);
+  color: #fff;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  font-size: 11px;
+  padding: 10px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.no-jobs {
+  line-height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advert {
+  height: 100%;
+}
+
+.advert h5 {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #dfdfdf;
+}
+
+.jobInfo {
+  height: 155px;
+}
+
+.response {
+  font-style: italic;
+}
+
+.body button {
+  padding: 8px 25px;
+  margin: 10px 20px -10px 20px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #616161;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.body h4 {
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.body .des {
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 10px;
+}
+
+.body button:hover {
+  background-color: #727171;
+  color: rgb(58, 57, 57);
+
+  transition: 0.4s ease-out;
 }
